@@ -47,3 +47,14 @@ spec:
     addresses:
     - 192.168.0.5-192.168.0.10
   ```
+**L2 Advertisement**
+```YAML
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: example
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+  - cheap
+  ```
